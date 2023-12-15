@@ -1,0 +1,101 @@
+/* DisplayRepos.css */
+
+/* Container for the dropdown and repositories */
+div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+.assignment-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Dropdown styles */
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.dropdown-select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+
+/* Repository container styles */
+.repo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+}
+
+.repo-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.repo-box:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.repo-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.repo-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.repo-stars {
+  font-size: 14px;
+  color: #888;
+}
+
+.star-count {
+  font-weight: bold;
+  color: #ffac33; /* Adjust the color as needed */
+  margin-left: 5px;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .repo-box {
+    width: 100%;
+  }
+}
